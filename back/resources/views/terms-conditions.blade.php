@@ -64,7 +64,8 @@
         </p>
         <p>
             <strong>CustomAcademy</strong><br>
-            Correo electrónico: soporte@customacademy.com<br>
+            Correo electrónico: soportecustomacademy@gmail.com
+            <br>
         </p>
     </main>
     @include('profile.partials.footer')

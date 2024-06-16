@@ -30,7 +30,8 @@
         </p>
         <p>
             <strong>CustomAcademy</strong><br>
-            Correo electrónico: info@customacademy.com<br>
+            Correo electrónico: soportecustomacademy@gmail.com
+            <br>
         </p>
     </main>
     @include('profile.partials.footer')

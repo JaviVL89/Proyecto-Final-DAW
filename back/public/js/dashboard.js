@@ -1,13 +1,24 @@
 document.addEventListener("DOMContentLoaded", function () {
-    console.log("dashboard.js cargado");
-
     const ctx = document.getElementById("myChart").getContext("2d");
     if (ctx) {
         console.log("Contexto de gráfico obtenido");
         const myChart = new Chart(ctx, {
             type: "bar",
             data: {
-                labels: ["Enero", "Febrero", "Marzo", "Abril", "Mayo"],
+                labels: [
+                    "Enero",
+                    "Febrero",
+                    "Marzo",
+                    "Abril",
+                    "Mayo",
+                    "Junio",
+                    "Julio",
+                    "Agosto",
+                    "Septiembre",
+                    "Octubre",
+                    "Noviembre",
+                    "Diciembre",
+                ],
                 datasets: [
                     {
                         label: "Cursos Realizados",

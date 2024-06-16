@@ -62,8 +62,7 @@
         </p>
         <p>
             <strong>CustomAcademy</strong><br>
-            Correo electrónico: soporte@customacademy.com<br>
-            Dirección: Calle de la Educación, 123, Ciudad Educativa, País
+            Correo electrónico: soportecustomacademy@gmail.com<br>
         </p>
     </main>
     @include('profile.partials.footer')

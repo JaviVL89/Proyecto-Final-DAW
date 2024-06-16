@@ -397,6 +397,7 @@ input:not(:placeholder-shown) ~ .reset {
 .custum-file-upload input {
     display: none;
 }
+
 /* Estilos para la imagen de perfil redonda */
 .profile-picture-upload {
     position: relative;
@@ -417,6 +418,7 @@ input:not(:placeholder-shown) ~ .reset {
 .profile-picture-upload input {
     display: none;
 }
+
 .delete-profile-picture {
     color: #dc3545;
     cursor: pointer;
@@ -427,4 +429,144 @@ input:not(:placeholder-shown) ~ .reset {
 
 .delete-profile-picture:hover {
     color: #c82333;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .icons {
+        margin-top: 10px;
+    }
+
+    .profile-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        margin: 10px 0;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 20px;
+    }
+
+    .site-name {
+        font-size: 22px;
+    }
+
+    .nav a {
+        font-size: 16px;
+    }
+
+    .icons a img {
+        width: 25px;
+        height: 25px;
+    }
+
+    .main {
+        padding: 20px 10px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .section h3 {
+        font-size: 20px;
+    }
+
+    .form-group label {
+        font-size: 14px;
+    }
+
+    .form-group input {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .btn,
+    .x-primary-button,
+    .x-secondary-button,
+    .x-danger-button {
+        font-size: 14px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 10px;
+    }
+
+    .site-name {
+        font-size: 20px;
+    }
+
+    .nav {
+        width: 100%;
+        justify-content: space-around;
+    }
+
+    .nav a {
+        font-size: 14px;
+    }
+
+    .icons {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .icons a img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .main {
+        padding: 10px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    .section h3 {
+        font-size: 18px;
+    }
+
+    .form-group label {
+        font-size: 12px;
+    }
+
+    .form-group input {
+        font-size: 12px;
+        padding: 8px 10px;
+    }
+
+    .btn,
+    .x-primary-button,
+    .x-secondary-button,
+    .x-danger-button {
+        font-size: 12px;
+        padding: 8px 16px;
+    }
+
+    .profile-container {
+        padding: 10px;
+    }
 }

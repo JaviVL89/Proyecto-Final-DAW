@@ -3,14 +3,13 @@ html {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #3d68b1;
+    background-color: #ffffff;
     height: 100%;
 }
 
 .main {
     display: flex;
     height: calc(100vh - 62px - 40px);
-    overflow: hidden;
 }
 
 .left-panel,
@@ -27,8 +26,7 @@ html {
     border-radius: 8px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
     padding: 10px;
-    height: calc(90vh - 122px);
-    overflow: hidden;
+    height: calc(90vh - 90px);
 }
 
 .catalog h2 {
@@ -317,4 +315,74 @@ input:not(:placeholder-shown) ~ .reset {
 .form svg {
     width: 17px;
     margin-top: 3px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .catalog {
+        height: auto;
+    }
+
+    .bottom-right {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-right h2 {
+        font-size: 28px;
+    }
+
+    .top-right p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .form {
+        --width-of-input: 100%;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .top-right h2 {
+        font-size: 24px;
+    }
+
+    .top-right p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .catalog {
+        padding: 5px;
+    }
+
+    .bottom-right {
+        padding: 10px;
+    }
 }

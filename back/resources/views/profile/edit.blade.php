@@ -21,6 +21,7 @@
             <a href="/dashboard">Inicio</a>
             <a href="#">Mis cursos</a>
             <a href="/courses">Catálogo</a>
+            <a href="/forums">Foro</a>
         </nav>
         <form class="form">
             <button>
