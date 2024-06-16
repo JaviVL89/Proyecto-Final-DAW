@@ -22,6 +22,8 @@
                                     <p>{{ $content->description }}</p>
                                     <a href="{{ route('contents.show', [$course->id, $content->id]) }}" class="btn">Iniciar curso</a>
                                     <a href="{{ route('contents.download', [$course->id, $content->id]) }}" class="btn">Descargar</a>
+                                    <a href="javascript:history.back()" class="btn">Volver Atrás</a>
+
                                 </li>
                             @endforeach
                         </ul>
