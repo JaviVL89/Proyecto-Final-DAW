@@ -1,0 +1,148 @@
+/* Estilos generales */
+body,
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    overflow: hidden;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+/* Flexbox para el contenedor principal */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Usar el 100% de la altura de la ventana */
+    padding: 20px;
+}
+
+.login-container {
+    max-width: 400px;
+    width: 100%;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 50px; /* Ajusta esta propiedad para mover el contenedor hacia la derecha */
+}
+
+h2 {
+    font-size: 24px; /* Tamaño de fuente para el h2 */
+    color: #f5a623; /* Color del texto */
+    text-align: center; /* Alineación del texto */
+    margin-bottom: 20px; /* Espacio debajo del h2 */
+    font-weight: normal; /* Peso de la fuente */
+    white-space: nowrap;
+}
+
+h1 {
+    white-space: nowrap;
+    font-size: 32px; /* Tamaño de fuente para el h1 */
+    color: #007bff; /* Color del texto, usando un azul más llamativo */
+    text-align: center; /* Alineación del texto */
+    margin-bottom: 30px; /* Espacio debajo del h1 */
+    font-weight: bold; /* Peso de la fuente para hacerlo más destacado */
+}
+
+/* Ajustes adicionales para los controles de formulario y botones */
+input[type="email"],
+input[type="password"] {
+    width: 95%; /* Hace que los inputs usen todo el ancho del contenedor padre */
+    padding: 10px; /* Más espacio dentro de los inputs */
+    margin-top: 10px; /* Espacio entre los inputs */
+    border: 1px solid #ccc; /* Borde sutil para los inputs */
+    border-radius: 4px; /* Bordes redondeados para los inputs */
+}
+
+button {
+    width: 100%; /* Botón que ocupa todo el ancho del contenedor */
+    padding: 10px 20px; /* Padding más grande para mejor clicabilidad */
+    background-color: #007bff; /* Color de fondo para el botón */
+    color: white; /* Texto del botón en blanco */
+    border: none; /* Sin borde para el botón */
+    border-radius: 4px; /* Bordes redondeados para el botón */
+    cursor: pointer; /* Cursor en forma de mano al pasar el mouse */
+    margin-top: 20px; /* Espacio arriba del botón */
+}
+
+button:hover {
+    background-color: #0056b3; /* Color más oscuro para el botón al hacer hover */
+}
+
+.btn-secondary {
+    background-color: #0056b3; /* Color de fondo para el botón secundario */
+    margin-top: 20px; /* Espacio arriba del botón */
+    padding: 10px 20px; /* Padding para mejor clicabilidad */
+    display: block;
+    text-align: center;
+    color: white; /* Texto del botón en blanco */
+    text-decoration: none; /* Quitar subrayado del enlace */
+    border-radius: 4px; /* Bordes redondeados para el botón */
+}
+
+.btn-secondary:hover {
+    background-color: #5a6268; /* Color más oscuro para el botón secundario al hacer hover */
+}
+
+/* Alineación en la misma línea */
+.form-register {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.forgot-password-link {
+    color: #007bff; /* Color azul */
+    text-decoration: none;
+    margin-left: 10px; /* Espacio entre el checkbox y el enlace */
+}
+
+.forgot-password-link:hover {
+    text-decoration: underline;
+}
+
+/* Estilo para el input de email */
+input[type="email"] {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Fondo blanco semitransparente */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: 10px center; /* Ajusta la posición de la imagen */
+    background-size: 20px 20px; /* Ajusta el tamaño de la imagen */
+}
+
+/* Estilo para el input de contraseña */
+input[type="password"] {
+    background-color: rgba(
+        255,
+        255,
+        255,
+        0.5
+    ); /* Fondo blanco semitransparente */
+    background-repeat: no-repeat; /* Evita la repetición de la imagen */
+    background-position: 10px center; /* Ajusta la posición de la imagen */
+    background-size: 20px 20px; /* Ajusta el tamaño de la imagen */
+}
+
+.error {
+    color: red;
+    font-size: 0.9em;
+}
+
+.form-actions {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}

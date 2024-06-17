@@ -1,0 +1,148 @@
+<?php
+
+namespace Database\Seeders;
+
+use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
+use Carbon\Carbon;
+
+class CoursesTableSeeder extends Seeder
+{
+    public function run()
+    {
+        $courses = [
+            [
+                'name' => 'Curso de HTML5',
+                'description' => 'Aprende HTML5 desde cero y crea sitios web impresionantes con los últimos estándares.',
+                'difficulty_level' => 'Principiante',
+                'duration' => '3 horas',
+                'image' => 'images/html5.png',
+                'category' => 'Frontend',
+                'instructors' => 'John Doe',
+                'start_date' => '2024-01-15',
+                'requirements' => 'Ninguno',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de Java Spring',
+                'description' => 'Domina la programación en Java con Spring y desarrolla aplicaciones robustas.',
+                'difficulty_level' => 'Intermedio',
+                'duration' => '6 horas',
+                'image' => 'images/spring.png',
+                'category' => 'Backend',
+                'instructors' => 'Jane Smith',
+                'start_date' => '2024-02-01',
+                'requirements' => 'Conocimientos básicos de Java',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de JavaScript',
+                'description' => 'Comprende los fundamentos y crea aplicaciones web dinámicas e interactivas en poco tiempo.',
+                'difficulty_level' => 'Avanzado',
+                'duration' => '5 horas',
+                'image' => 'images/JS.jpg',
+                'category' => 'Frontend',
+                'instructors' => 'Emily Johnson',
+                'start_date' => '2024-03-10',
+                'requirements' => 'Conocimientos básicos de programación',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de Python',
+                'description' => 'Aprende Python desde cero y domina uno de los lenguajes de programación más populares.',
+                'difficulty_level' => 'Principiante',
+                'duration' => '4 horas',
+                'image' => 'images/python.png',
+                'category' => 'Backend',
+                'instructors' => 'Michael Brown',
+                'start_date' => '2024-04-05',
+                'requirements' => 'Ninguno',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de Data Science',
+                'description' => 'Explora el mundo de la ciencia de datos y aprende a analizar y visualizar datos.',
+                'difficulty_level' => 'Intermedio',
+                'duration' => '8 horas',
+                'image' => 'images/data_science.png',
+                'category' => 'Data Science',
+                'instructors' => 'Sarah Davis',
+                'start_date' => '2024-05-20',
+                'requirements' => 'Conocimientos básicos de programación y estadística',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de Desarrollo Web',
+                'description' => 'Aprende a desarrollar sitios web modernos utilizando HTML, CSS y JavaScript.',
+                'difficulty_level' => 'Principiante',
+                'duration' => '10 horas',
+                'image' => 'images/web_dev.png',
+                'category' => 'Frontend',
+                'instructors' => 'David Wilson',
+                'start_date' => '2024-06-15',
+                'requirements' => 'Ninguno',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de DevOps',
+                'description' => 'Domina las prácticas de DevOps y aprende a gestionar la infraestructura y despliegue de aplicaciones.',
+                'difficulty_level' => 'Avanzado',
+                'duration' => '12 horas',
+                'image' => 'images/devops.png',
+                'category' => 'IT & Software',
+                'instructors' => 'James Martinez',
+                'start_date' => '2024-07-10',
+                'requirements' => 'Experiencia en administración de sistemas',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de Machine Learning',
+                'description' => 'Aprende los fundamentos del Machine Learning y cómo aplicar algoritmos de aprendizaje automático.',
+                'difficulty_level' => 'Intermedio',
+                'duration' => '7 horas',
+                'image' => 'images/machine_learning.png',
+                'category' => 'Data Science',
+                'instructors' => 'Patricia Anderson',
+                'start_date' => '2024-08-25',
+                'requirements' => 'Conocimientos de programación y matemáticas',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de Blockchain',
+                'description' => 'Descubre el mundo de la tecnología blockchain y cómo se utilizan las criptomonedas.',
+                'difficulty_level' => 'Avanzado',
+                'duration' => '6 horas',
+                'image' => 'images/blockchain.png',
+                'category' => 'IT & Software',
+                'instructors' => 'Barbara Moore',
+                'start_date' => '2024-09-30',
+                'requirements' => 'Conocimientos de programación',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+            [
+                'name' => 'Curso de Ciberseguridad',
+                'description' => 'Aprende las mejores prácticas y técnicas para proteger sistemas y datos contra amenazas cibernéticas.',
+                'difficulty_level' => 'Intermedio',
+                'duration' => '9 horas',
+                'image' => 'images/cybersecurity.png',
+                'category' => 'IT & Software',
+                'instructors' => 'Daniel Lee',
+                'start_date' => '2024-10-20',
+                'requirements' => 'Conocimientos básicos de redes y sistemas operativos',
+                'created_at' => Carbon::now(),
+                'updated_at' => Carbon::now(),
+            ],
+        ];
+
+        DB::table('courses')->insert($courses);
+    }
+}

@@ -1,0 +1,388 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    height: 100%;
+}
+
+.main {
+    display: flex;
+    height: calc(100vh - 62px - 40px);
+}
+
+.left-panel,
+.right-panel {
+    padding: 20px;
+}
+
+.left-panel {
+    width: 50%;
+}
+
+.catalog {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    height: calc(90vh - 90px);
+}
+
+.catalog h2 {
+    color: #3d68b1;
+    margin-left: 15px;
+}
+
+.catalog ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.catalog ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc;
+    color: #333;
+}
+
+.right-panel {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.top-right {
+    background-color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    flex: 1;
+    text-align: center;
+    overflow: hidden;
+}
+
+.top-right h2 {
+    font-size: 36px;
+    color: #3d68b1;
+    margin-top: -10px;
+}
+
+.top-right p {
+    font-size: 18px;
+    color: #333;
+    margin: 10px 0;
+    text-align: justify;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: #fff;
+    background-color: #f5a623;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: #e59400;
+}
+
+.bottom-right {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    height: calc(50% - 10px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#myChart {
+    width: 100%;
+    height: 100%;
+}
+
+.catalog-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.plan {
+    border-radius: 16px;
+    box-shadow: 0 30px 30px -25px rgba(0, 38, 255, 0.205);
+    padding: 0px;
+    background-color: #fff;
+    color: #697e91;
+    max-width: 200px;
+    max-height: 20px;
+}
+
+.plan strong {
+    font-weight: 600;
+    color: #425275;
+}
+
+.plan .inner {
+    align-items: center;
+    padding: 20px;
+    padding-top: 30px;
+    background-color: #ecf0ff;
+    border-radius: 12px;
+    position: relative;
+}
+
+.plan .pricing {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #bed6fb;
+    border-radius: 99em 0 0 99em;
+    display: flex;
+    align-items: center;
+    padding: 0.625em 0.75em;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #425475;
+}
+
+.plan .pricing small {
+    color: #707a91;
+    font-size: 0.75em;
+    margin-left: 0.25em;
+}
+
+.plan .title {
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #425675;
+}
+
+.plan .info + * {
+    margin-top: 1rem;
+}
+
+.plan .features {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan .features li {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.plan .features li + * {
+    margin-top: 0.75rem;
+}
+
+.plan .features .icon {
+    background-color: #1fcac5;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+}
+
+.plan .features .icon svg {
+    width: 14px;
+    height: 14px;
+}
+
+.plan .features + * {
+    margin-top: 1.25rem;
+}
+
+.plan .action {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+
+.plan .button {
+    background-color: #f5a623;
+    border-radius: 6px;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.125rem;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    width: 100%;
+    padding: 0.625em 0.75em;
+    text-decoration: none;
+}
+
+.plan .button:hover,
+.plan .button:focus {
+    background-color: #4133b7;
+}
+
+.course-image {
+    width: 80%;
+    height: 70px;
+    border-radius: 8px;
+    margin: 0px 15px;
+}
+
+/* Form Styles */
+.form button {
+    border: none;
+    background: none;
+    color: #8b8ba7;
+}
+
+.form {
+    --timing: 0.3s;
+    --width-of-input: 200px;
+    --height-of-input: 40px;
+    --border-height: 2px;
+    --input-bg: #fff;
+    --border-color: #2f2ee9;
+    --border-radius: 30px;
+    --after-border-radius: 1px;
+    position: relative;
+    width: var(--width-of-input);
+    height: var(--height-of-input);
+    display: flex;
+    align-items: center;
+    padding-inline: 0.8em;
+    border-radius: var(--border-radius);
+    transition: border-radius 0.5s ease;
+    background: var(--input-bg, #fff);
+    margin-right: 10px;
+}
+
+.input {
+    font-size: 0.9rem;
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    padding-inline: 0.5em;
+    padding-block: 0.7em;
+    border: none;
+}
+
+.form:before {
+    content: "";
+    position: absolute;
+    background: var(--border-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    width: 100%;
+    height: var(--border-height);
+    left: 0;
+    bottom: 0;
+    border-radius: 1px;
+    transition: transform var(--timing) ease;
+}
+
+.form:focus-within {
+    border-radius: var(--after-border-radius);
+}
+
+input:focus {
+    outline: none;
+}
+
+.form:focus-within:before {
+    transform: scale(1);
+}
+
+.reset {
+    border: none;
+    background: none;
+    opacity: 0;
+    visibility: hidden;
+}
+
+input:not(:placeholder-shown) ~ .reset {
+    opacity: 1;
+    visibility: visible;
+}
+
+.form svg {
+    width: 17px;
+    margin-top: 3px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .main {
+        flex-direction: column;
+    }
+
+    .left-panel,
+    .right-panel {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .catalog {
+        height: auto;
+    }
+
+    .bottom-right {
+        height: auto;
+    }
+}
+
+@media (max-width: 768px) {
+    .top-right h2 {
+        font-size: 28px;
+    }
+
+    .top-right p {
+        font-size: 16px;
+    }
+
+    .btn {
+        font-size: 16px;
+    }
+
+    .form {
+        --width-of-input: 100%;
+    }
+
+    .catalog-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .catalog-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .top-right h2 {
+        font-size: 24px;
+    }
+
+    .top-right p {
+        font-size: 14px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .catalog {
+        padding: 5px;
+    }
+
+    .bottom-right {
+        padding: 10px;
+    }
+}
