@@ -1,0 +1,96 @@
+/* register.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url("../images/1.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+.register-container {
+    max-width: 400px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.register-container:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #007bff;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+
+.form-group input:focus {
+    border-color: #3490dc;
+    box-shadow: 0 0 5px rgba(52, 144, 220, 0.5);
+}
+
+.form-group .error {
+    color: red;
+    font-size: 0.9em;
+    position: absolute;
+    top: 100%;
+    left: 0;
+}
+
+.form-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-footer a {
+    color: #3490dc;
+    text-decoration: none;
+}
+
+.form-footer button {
+    background: #3490dc;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-footer button:hover {
+    background: #2779bd;
+}
+
+.form-footer button.loading {
+    cursor: not-allowed;
+    opacity: 0.6;
+}

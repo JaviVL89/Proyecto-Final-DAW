@@ -1,0 +1,125 @@
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.main-content {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #3d68b1;
+}
+
+form {
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #f5a623;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #e59400;
+}
+
+.btn-secondary {
+    background-color: #3d68b1;
+}
+
+.btn-secondary:hover {
+    background-color: #4d6896;
+}
+
+.forum-list,
+.post-list,
+.comment-list {
+    margin-top: 20px;
+}
+
+.forum-card,
+.post-card,
+.comment {
+    background: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.forum-card h2,
+.post-card h2 {
+    margin-top: 0;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.comment form {
+    display: inline;
+}
+
+.comment button {
+    margin-left: 10px;
+    background: #dc3545;
+}
+
+.comment button:hover {
+    background: #c82333;
+}
+
+.comment a {
+    margin-left: 10px;
+    color: #ffffff;
+}
+
+.comment a:hover {
+    text-decoration: underline;
+}
+
+textarea.form-control {
+    height: 100px;
+}
